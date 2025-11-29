@@ -68,35 +68,4 @@ public class Activity
             Console.Write("\b \b");
         }
     }
-
-/*
-    public void BreathingAnimation(int seconds)
-    {
-        int i = 0;
-        List<string> _breath = new List<string>();
-        _breath.Add(".");
-        _breath.Add("o");
-        _breath.Add("O");
-        _breath.Add(".");
-        _breath.Add("o");
-
-        DateTime startTime = DateTime.Now;
-        DateTime endTime = startTime.AddSeconds(seconds);
-
-        while (DateTime.Now < endTime)
-        {
-            Console.Write(_breath[i]);
-            Thread.Sleep(500);
-            Console.Write("\b \b");
-
-            i++;
-
-            if (i >= _breath.Count)
-            {
-                i = 0;
-            }
-        }
-    }
-*/
-
 }
