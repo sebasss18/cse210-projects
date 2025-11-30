@@ -92,6 +92,11 @@ class Program
                     Console.Clear();
                 }
 
+                else if (opt == "4")
+                {
+                    Console.WriteLine("\nThank you for using the Mindfulness Program!\n");
+                }
+
                 else
                 {
                     Console.WriteLine("\nYou must select a valid option.");
@@ -102,9 +107,7 @@ class Program
             {
                 Console.WriteLine("\nYou must write in seconds the amount of time you want the activity to be.");
             }
-            
-        }
 
-        Console.WriteLine("Thank you for using the Mindfulness program!");
+        }
     }
 }
