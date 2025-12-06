@@ -246,7 +246,6 @@ public class GoalManager
         {
             _score += cg.Bonus;
             Console.WriteLine($"Bonus earned! +{cg.Bonus} points!");
-
         }
 
         Console.WriteLine($"You earned {pointsEarned} points!");
