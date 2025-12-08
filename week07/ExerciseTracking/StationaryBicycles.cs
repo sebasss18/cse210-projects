@@ -18,9 +18,4 @@ public class StationaryBicycles : Activity
     {
         return _minutes / GetDistanceKm();
     }
-
-    public override string GetSummary()
-    {
-        return $"{GetDate()} Stationary Bicycles ({_minutes} min) - Distance {GetDistanceKm()} Km, Speed {GetSpeed()}Kph, Pace: {GetPace()} min per km";
-    }
 }

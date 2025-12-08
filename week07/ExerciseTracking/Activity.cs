@@ -8,7 +8,7 @@ public abstract class Activity
     public string GetDate()
     {
         DateTime date = DateTime.Now;
-        return date.ToString();
+        return date.ToString("MM/dd/yyyy");
     }
 
     public Activity(double speed, double distance, double minutes)
@@ -22,5 +22,8 @@ public abstract class Activity
     public abstract double GetSpeed();
     public abstract double GetPace();
 
-    public abstract string GetSummary();
+    public virtual string GetSummary()
+    {
+        return $"{GetDate()} {this.GetType().Name} ({_minutes} min) - Distance {GetDistanceKm().ToString("F2")} Km, Speed {GetSpeed().ToString("F2")}Kph, Pace: {GetPace().ToString("F2")} min per km";
+    }
 }

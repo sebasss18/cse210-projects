@@ -8,7 +8,7 @@ public class SwimmingPool : Activity
     }
     public override double GetDistanceKm()
     {
-        return _laps * 50 / 1000;
+        return _laps * 50.0 / 1000.0;
     }
 
     public override double GetSpeed()
@@ -19,10 +19,5 @@ public class SwimmingPool : Activity
     public override double GetPace()
     {
         return _minutes / GetDistanceKm();
-    }
-
-    public override string GetSummary()
-    {
-        return $"{GetDate()} Swimming in the lap pool ({_minutes} min) - Distance {GetDistanceKm()} Km, Speed {GetSpeed()}Kph, Pace: {GetPace()} min per km";
     }
 }
